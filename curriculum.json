@@ -1,0 +1,2890 @@
+{
+  "curricula": [
+    {
+      "year": 2020,
+      "double": false,
+      "semesters": {
+        "spring": {
+          "months": [ 
+            {
+              "name": "März",
+              "weekends": [
+                {
+                  "friday": {
+                    "date": "2020-03-06",
+                    "room": "7.G01",
+                    "postponed": false,
+                    "morning": {
+                      "teacher": "Josef Renner",
+                      "title": "Begrüssung & Intro",
+                      "guest": false
+                    },
+                    "afternoon": {
+                      "teacher": "Josef Renner",
+                      "title": "Markup & -down",
+                      "guest": false
+                    }
+                  },
+                  "saturday": {
+                    "date": "2020-03-07",
+                    "room": "7.G01",
+                    "postponed": false,
+                    "morning": {
+                      "teacher": "Florian Schulz",
+                      "title": "UI Basics",
+                      "guest": false
+                    },
+                    "afternoon": {
+                      "teacher": "Florian Schulz",
+                      "title": "UI Basics",
+                      "guest": false
+                    }
+                  }
+                },
+                {
+                  "friday": {
+                    "date": "2020-03-20",
+                    "room": "7.G01",
+                    "postponed": true,
+                    "morning": {
+                      "teacher": "Christian Gaiser",
+                      "title": "Digital Landscape & Process",
+                      "guest": false
+                    },
+                    "afternoon": {
+                      "teacher": "Christian Gaiser",
+                      "title": "Digital Landscape & Process",
+                      "guest": false
+                    }
+                  },
+                  "saturday": {
+                    "date": "2020-03-21",
+                    "room": "5.k01",
+                    "postponed": true,
+                    "morning": {
+                      "teacher": "Christine Gertsch",
+                      "title": "Typotech-Workshop",
+                      "guest": false
+                    },
+                    "afternoon": {
+                      "teacher": "Josef Renner",
+                      "title": "Typotech-Workshop",
+                      "guest": false
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "name": "April",
+              "weekends": [
+                {
+                  "friday": {
+                    "date": "2020-04-03",
+                    "room": "7.G01",
+                    "postponed": false,
+                    "morning": {
+                      "teacher": "Josef Renner",
+                      "title": "Typotech-Workshop",
+                      "guest": false
+                    },
+                    "afternoon": {
+                      "teacher": "Christine Gertsch",
+                      "title": "Typotech-Workshop",
+                      "guest": false
+                    }
+                  },
+                  "saturday": {
+                    "date": "2020-04-04",
+                    "room": "7.G01",
+                    "postponed": false,
+                    "morning": {
+                      "teacher": "Florian Schulz",
+                      "title": "Prototyping II",
+                      "guest": false
+                    },
+                    "afternoon": {
+                      "teacher": "Florian Schulz",
+                      "title": "Prototyping II",
+                      "guest": false
+                    }
+                  }
+                },
+                {
+                  "friday": {
+                    "date": "2020-04-24",
+                    "room": "7.G01",
+                    "postponed": false,
+                    "morning": {
+                      "teacher": "Florian Schulz",
+                      "title": "Prototyping III",
+                      "guest": false
+                    },
+                    "afternoon": {
+                      "teacher": "Florian Schulz",
+                      "title": "Prototyping III",
+                      "guest": false
+                    }
+                  },
+                  "saturday": {
+                    "date": "2020-04-25",
+                    "room": "7.G01",
+                    "postponed": false,
+                    "morning": {
+                      "teacher": "Christian Gaiser",
+                      "title": "Digital Landscape & Process",
+                      "guest": false
+                    },
+                    "afternoon": {
+                      "teacher": "Christian Gaiser",
+                      "title": "Digital Landscape & Process",
+                      "guest": false
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Mai",
+              "weekends": [
+                {
+                  "friday": {
+                    "date": "2020-05-08",
+                    "room": "5.G10",
+                    "postponed": false,
+                    "morning": {
+                      "teacher": "Christine Gertsch",
+                      "title": "Typotech-Workshop",
+                      "guest": false
+                    },
+                    "afternoon": {
+                      "teacher": "Josef Renner",
+                      "title": "Typotech-Workshop",
+                      "guest": false
+                    }
+                  },
+                  "saturday": {
+                    "date": "2020-05-09",
+                    "room": "5.K01",
+                    "postponed": false,
+                    "morning": {
+                      "teacher": "Josef Renner",
+                      "title": "Technik Workshop",
+                      "guest": false
+                    },
+                    "afternoon": {
+                      "teacher": "Heidrun Föhn",
+                      "title": "Game Development & AR",
+                      "guest": true
+                    }
+                  }
+                },
+                {
+                  "friday": {
+                    "date": "2020-05-22",
+                    "room": "7.G01",
+                    "postponed": false,
+                    "morning": {
+                      "teacher": "Christine Gertsch",
+                      "title": "Typotech-Workshop",
+                      "guest": false
+                    },
+                    "afternoon": {
+                      "teacher": "Josef Renner",
+                      "title": "Typotech-Workshop",
+                      "guest": false
+                    }
+                  },
+                  "saturday": {
+                    "date": "2020-05-23",
+                    "room": "7.G01",
+                    "postponed": false,
+                    "morning": {
+                      "teacher": "Christian Gaiser",
+                      "title": "Empathy & Ideation",
+                      "guest": false
+                    },
+                    "afternoon": {
+                      "teacher": "Christian Gaiser",
+                      "title": "Empathy & Ideation",
+                      "guest": false
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Juni",
+              "weekends": [
+                {
+                  "friday": {
+                    "date": "2020-06-05",
+                    "room": "7.G01",
+                    "postponed": false,
+                    "morning": {
+                      "teacher": "Christian Gaiser",
+                      "title": "Scope & Structure",
+                      "guest": false
+                    },
+                    "afternoon": {
+                      "teacher": "Christian Gaiser",
+                      "title": "Scope & Structure",
+                      "guest": false
+                    }
+                  },
+                  "saturday": {
+                    "date": "2020-06-06",
+                    "room": "7.G01",
+                    "postponed": false,
+                    "morning": {
+                      "teacher": "Florian Schulz",
+                      "title": "Prototyping IV",
+                      "guest": false
+                    },
+                    "afternoon": {
+                      "teacher": "Johannes Lang",
+                      "title": null,
+                      "guest": true
+                    }
+                  }
+                },
+                {
+                  "friday": {
+                    "date": "2020-06-19",
+                    "room": "7.G01",
+                    "postponed": false,
+                    "morning": {
+                      "teacher": "Josef Renner",
+                      "title": "Drawbot Workshop",
+                      "guest": false
+                    },
+                    "afternoon": {
+                      "teacher": "Christine Gertsch",
+                      "title": "Drawbot Workshop",
+                      "guest": false
+                    }
+                  },
+                  "saturday": {
+                    "date": "2020-06-20",
+                    "room": "7.G01",
+                    "postponed": false,
+                    "morning": {
+                      "teacher": "Josef Renner",
+                      "title": "Drawbot Workshop",
+                      "guest": false
+                    },
+                    "afternoon": {
+                      "teacher": "Christine Gertsch",
+                      "title": "Drawbot Workshop",
+                      "guest": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "fall": {
+          "months": [ 
+            {
+              "name": "September",
+              "weekends": [
+                {
+                  "friday": {
+                    "date": "2020-09-18",
+                    "room": "5.K10",
+                    "postponed": false,
+                    "morning": {
+                      "teacher": "Josef Renner",
+                      "title": "Besprechung Hausaufgabe",
+                      "guest": false
+                    },
+                    "afternoon": {
+                      "teacher": "Josef Renner",
+                      "title": "Coding FTW",
+                      "guest": false
+                    }
+                  },
+                  "saturday": {
+                    "date": "2020-09-19",
+                    "room": "5.K10",
+                    "postponed": false,
+                    "morning": {
+                      "teacher": "Florian Schulz",
+                      "title": "Prototyping V",
+                      "guest": false
+                    },
+                    "afternoon": {
+                      "teacher": "Florian Schulz",
+                      "title": "Prototyping V",
+                      "guest": false
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Oktober",
+              "weekends": [
+                {
+                  "friday": {
+                    "date": "2020-10-02",
+                    "room": "2.A05",
+                    "postponed": false,
+                    "morning": {
+                      "teacher": "Christine Gertsch",
+                      "title": "Typotech Workshop",
+                      "guest": false
+                    },
+                    "afternoon": {
+                      "teacher": "Josef Renner",
+                      "title": "Typotech Workshop",
+                      "guest": false
+                    }
+                  },
+                  "saturday": {
+                    "date": "2020-10-03",
+                    "room": "5.K11",
+                    "postponed": false,
+                    "morning": {
+                      "teacher": "Christian Gaiser",
+                      "title": "Konzeption IV",
+                      "guest": false
+                    },
+                    "afternoon": {
+                      "teacher": "Christian Gaiser",
+                      "title": "Konzeption IV",
+                      "guest": false
+                    }
+                  }
+                },
+                {
+                  "friday": {
+                    "date": "2020-10-16",
+                    "room": "3.K13",
+                    "postponed": false,
+                    "morning": {
+                      "teacher": "Florian Schulz",
+                      "title": "Prototyping VI",
+                      "guest": false
+                    },
+                    "afternoon": {
+                      "teacher": "Florian Schulz",
+                      "title": "Prototyping VI",
+                      "guest": false
+                    }
+                  },
+                  "saturday": {
+                    "date": "2020-10-17",
+                    "room": "4.T33",
+                    "postponed": false,
+                    "morning": {
+                      "teacher": "Christine Gertsch",
+                      "title": "Typotech Workshop",
+                      "guest": false
+                    },
+                    "afternoon": {
+                      "teacher": "Adina Renner",
+                      "title": "Gastreferat",
+                      "guest": true
+                    }
+                  }
+                },
+                {
+                  "friday": {
+                    "date": "2020-10-30",
+                    "room": "3.K13",
+                    "postponed": false,
+                    "morning": {
+                      "teacher": "Christine Gertsch",
+                      "title": "Typotech Workshop",
+                      "guest": false
+                    },
+                    "afternoon": {
+                      "teacher": "Josef Renner",
+                      "title": "Typotech Workshop",
+                      "guest": false
+                    }
+                  },
+                  "saturday": {
+                    "date": "2020-10-31",
+                    "room": "5.K11",
+                    "postponed": false,
+                    "morning": {
+                      "teacher": "Christian Gaiser",
+                      "title": "Konzeption V",
+                      "guest": false
+                    },
+                    "afternoon": {
+                      "teacher": "Christian Gaiser",
+                      "title": "Konzeption V",
+                      "guest": false
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "name": "November",
+              "weekends": [
+                {
+                  "friday": {
+                    "date": "2020-11-13",
+                    "room": "5.K10",
+                    "postponed": false,
+                    "morning": {
+                      "teacher": "Florian Schulz",
+                      "title": "Prototyping VII",
+                      "guest": false
+                    },
+                    "afternoon": {
+                      "teacher": "Florian Schulz",
+                      "title": "Prototyping VII",
+                      "guest": false
+                    }
+                  },
+                  "saturday": {
+                    "date": "2020-11-14",
+                    "room": "5.K10",
+                    "postponed": false,
+                    "morning": {
+                      "teacher": "Sébastien Donzel",
+                      "title": "Pitchen & Präsentieren",
+                      "guest": false
+                    },
+                    "afternoon": {
+                      "teacher": "Peter Wittwer",
+                      "title": "UI Designer, CAS DT 2018/19",
+                      "guest": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Dezember",
+              "weekends": [
+                {
+                  "friday": {
+                    "date": "2020-12-04",
+                    "room": "6.F01",
+                    "postponed": false,
+                    "morning": {
+                      "teacher": "Dan Nessler",
+                      "title": "Experience Design / UX Map",
+                      "guest": false
+                    },
+                    "afternoon": {
+                      "teacher": "Dan Nessler",
+                      "title": "Experience Design / UX Map",
+                      "guest": false
+                    }
+                  },
+                  "saturday": {
+                    "date": "2020-12-05",
+                    "room": "4.T37",
+                    "postponed": false,
+                    "morning": {
+                      "teacher": "Christian Gaiser",
+                      "title": "Konzeption VI",
+                      "guest": false
+                    },
+                    "afternoon": {
+                      "teacher": "Christian Gaiser",
+                      "title": "Konzeption VI",
+                      "guest": false
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Januar",
+              "weekends": [
+                {
+                  "friday": {
+                    "date": "2021-01-22",
+                    "room": "6.K04",
+                    "postponed": false,
+                    "morning": {
+                      "teacher": "Josef Renner",
+                      "title": "Typotech Workshop",
+                      "guest": false
+                    },
+                    "afternoon": {
+                      "teacher": "Christine Gertsch",
+                      "title": "Typotech Workshop",
+                      "guest": false
+                    }
+                  },
+                  "saturday": {
+                    "date": "2021-01-23",
+                    "room": "6.K04",
+                    "postponed": false,
+                    "morning": {
+                      "teacher": "Sébastien Donzel",
+                      "title": "Pitchen & Präsentieren",
+                      "guest": false
+                    },
+                    "afternoon": {
+                      "teacher": "Dominique Hufschmid",
+                      "title": "Gastreferat",
+                      "guest": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Februar",
+              "weekends": [
+                {
+                  "friday": {
+                    "date": "2021-02-05",
+                    "room": "4.T33",
+                    "postponed": false,
+                    "morning": {
+                      "teacher": "Florian Schulz",
+                      "title": "Prototyping VIII",
+                      "guest": false
+                    },
+                    "afternoon": {
+                      "teacher": "Florian Schulz",
+                      "title": "Prototyping VIII",
+                      "guest": false
+                    }
+                  },
+                  "saturday": {
+                    "date": "2021-02-06",
+                    "room": "4.T33",
+                    "postponed": false,
+                    "morning": {
+                      "teacher": "Josef Renner",
+                      "title": "Typotech Workshop",
+                      "guest": false
+                    },
+                    "afternoon": {
+                      "teacher": "Christine Gertsch",
+                      "title": "Typotech Workshop",
+                      "guest": false
+                    }
+                  }
+                },
+                {
+                  "friday": {
+                    "date": "2021-02-26",
+                    "room": null,
+                    "postponed": false,
+                    "morning": {
+                      "teacher": "Josef Renner",
+                      "title": "Coding FTW",
+                      "guest": false
+                    },
+                    "afternoon": {
+                      "teacher": "Florian Schulz",
+                      "title": "Carte Blanche",
+                      "guest": false
+                    }
+                  },
+                  "saturday": {
+                    "date": "2021-02-27",
+                    "room": null,
+                    "postponed": false,
+                    "morning": {
+                      "teacher": null,
+                      "title": "Präsentationen",
+                      "guest": false
+                    },
+                    "afternoon": {
+                      "teacher": null,
+                      "title": "Präsentationen",
+                      "guest": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2021,
+      "double": true,
+      "semesters": {
+        "spring": {
+          "months": [ 
+            {
+              "name": "März",
+              "weekends": [
+                {
+                  "friday": {
+                    "date": "2021-03-05",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "X.000",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "Y.000",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Josef Renner",
+                          "title": "Coding",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Josef Renner",
+                          "title": "Coding",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  },
+                  "saturday": {
+                    "date": "2021-03-06",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "X.000",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Josef Renner",
+                          "title": "Coding",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Josef Renner",
+                          "title": "Coding",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "Y.000",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "friday": {
+                    "date": "2021-03-19",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "X.000",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Christine Gertsch",
+                          "title": "Typo",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christine Gertsch",
+                          "title": "Typo",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "Y.000",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Josef Renner",
+                          "title": "Coding",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Josef Renner",
+                          "title": "Coding",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  },
+                  "saturday": {
+                    "date": "2021-03-20",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "X.000",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Josef Renner",
+                          "title": "Coding",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Josef Renner",
+                          "title": "Coding",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "Y.000",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Christine Gertsch",
+                          "title": "Typo",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christine Gertsch",
+                          "title": "Typo",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "name": "April",
+              "weekends": [
+                {
+                  "friday": {
+                    "date": "2021-04-09",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "X.000",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christine Gertsch",
+                          "title": "TypoTech",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "Y.000",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Josef Renner",
+                          "title": "TypoTech",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  },
+                  "saturday": {
+                    "date": "2021-04-10",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "X.000",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Severin Zaugg",
+                          "title": null,
+                          "guest": true
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "Y.000",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Christine Gertsch",
+                          "title": "TypoTech",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Severin Zaugg",
+                          "title": null,
+                          "guest": true
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "friday": {
+                    "date": "2021-04-23",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "X.000",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "Y.000",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Christian Gaiser",
+                          "title": "Konzeption",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christian Gaiser",
+                          "title": "Konzeption",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  },
+                  "saturday": {
+                    "date": "2021-04-24",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "X.000",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Christian Gaiser",
+                          "title": "Konzeption",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christian Gaiser",
+                          "title": "Konzeption",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "Y.000",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Mai",
+              "weekends": [
+                {
+                  "friday": {
+                    "date": "2021-05-07",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "X.000",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Josef Renner",
+                          "title": "TypoTech",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christine Gertsch",
+                          "title": "TypoTech",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "Y.000",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Christine Gertsch",
+                          "title": "TypoTech",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Josef Renner",
+                          "title": "TypoTech",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  },
+                  "saturday": {
+                    "date": "2021-05-08",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "X.000",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Josef Renner",
+                          "title": "TypoTech",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Johannes Lang",
+                          "title": null,
+                          "guest": true
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "Y.000",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Christine Gertsch",
+                          "title": "TypoTech",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Johannes Lang",
+                          "title": null,
+                          "guest": true
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "friday": {
+                    "date": "2021-05-21",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "X.000",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "Y.000",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Christian Gaiser",
+                          "title": "Konzeption",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christian Gaiser",
+                          "title": "Konzeption",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  },
+                  "saturday": {
+                    "date": "2021-05-22",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "X.000",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Christian Gaiser",
+                          "title": "Konzeption",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christian Gaiser",
+                          "title": "Konzeption",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "Y.000",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Juni",
+              "weekends": [
+                {
+                  "friday": {
+                    "date": "2021-06-04",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "X.000",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Sébastien Donzel",
+                          "title": "Präsentation & Pitch",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Sébastien Donzel",
+                          "title": "Präsentation & Pitch",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "Y.000",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Christine Gertsch",
+                          "title": "Creative Coding",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Josef Renner",
+                          "title": "Creative Coding",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  },
+                  "saturday": {
+                    "date": "2021-06-05",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "X.000",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Christine Gertsch",
+                          "title": "Creative Coding",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Josef Renner",
+                          "title": "Creative Coding",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "Y.000",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Sébastien Donzel",
+                          "title": "Präsentation & Pitch",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Sébastien Donzel",
+                          "title": "Präsentation & Pitch",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "friday": {
+                    "date": "2021-06-18",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "X.000",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Pascal Biber",
+                          "title": "Storytelling",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Pascal Biber",
+                          "title": "Storytelling",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "Y.000",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Josef Renner",
+                          "title": "Creative Coding",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christine Gertsch",
+                          "title": "Creative Coding",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  },
+                  "saturday": {
+                    "date": "2021-06-19",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "X.000",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Josef Renner",
+                          "title": "Creative Coding",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christine Gertsch",
+                          "title": "Creative Coding",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "Y.000",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Pascal Biber",
+                          "title": "Storytelling",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Pascal Biber",
+                          "title": "Storytelling",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "fall": {
+          "months": [ 
+            {
+              "name": "September",
+              "weekends": [
+                {
+                  "friday": {
+                    "date": "2021-09-17",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "5.K03",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Florian Schulz",
+                          "title": "Data Driven Design",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Florian Schulz",
+                          "title": "Data Driven Design",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "3.K13",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Josef Renner",
+                          "title": "Intro JavaScript",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Josef Renner",
+                          "title": "Intro Javascript",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  },
+                  "saturday": {
+                    "date": "2021-09-18",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "5.K03",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Josef Renner",
+                          "title": "Intro JavaScript",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Josef Renner",
+                          "title": "Intro JavaScript",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "3.K13",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Florian Schulz",
+                          "title": "Data Driven Design",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Florian Schulz",
+                          "title": "Data Driven Design",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Oktober",
+              "weekends": [
+              {
+                  "friday": {
+                    "date": "2021-10-01",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "5.K03",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Josef Renner",
+                          "title": "TypoTech",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Josef Renner",
+                          "title": "TypoTech",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "5.K10",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Christine Gertsch",
+                          "title": "TypoTech",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christine Gertsch",
+                          "title": "TypoTech",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  },
+                  "saturday": {
+                    "date": "2021-10-02",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "5.K03",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Christine Gertsch",
+                          "title": "TypoTech",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christine Gertsch",
+                          "title": "TypoTech",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "5.K10",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Josef Renner",
+                          "title": "TypoTech",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Josef Renner",
+                          "title": "TypoTech",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "friday": {
+                    "date": "2021-10-15",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "5.K10",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Christian Gaiser",
+                          "title": "Konzeption",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christian Gaiser",
+                          "title": "Konzeption",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "5.K03",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Dan Nessler",
+                          "title": "Experience Design",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Dan Nessler",
+                          "title": "Experience Design",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  },
+                  "saturday": {
+                    "date": "2021-10-16",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "5.K10",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Dan Nessler",
+                          "title": "Experience Design",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Dan Nessler",
+                          "title": "Experience Design",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "5.K03",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Christian Gaiser",
+                          "title": "Konzeption",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christian Gaiser",
+                          "title": "Konzeption",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "friday": {
+                    "date": "2021-10-29",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "5.K10",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Florian Schulz",
+                          "title": "Projektarbeit",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Josef Renner",
+                          "title": "Projektarbeit",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "5.K03",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Josef Renner",
+                          "title": "Projektarbeit",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Florian Schulz",
+                          "title": "Projektarbeit",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  },
+                  "saturday": {
+                    "date": "2021-10-30",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "5.K10",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Florian Schulz",
+                          "title": "Präsentation Datendetektive",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Mitch Paone",
+                          "title": "Studio DIA",
+                          "guest": true
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "5.K03",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Christine Gertsch",
+                          "title": "Präsentation Datendetektive",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Mitch Paone",
+                          "title": "Studio DIA",
+                          "guest": true
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "name": "November",
+              "weekends": [
+                {
+                  "friday": {
+                    "date": "2021-11-12",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "5.K03",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Christian Gaiser",
+                          "title": "Konzeption",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christian Gaiser",
+                          "title": "Konzeption",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "5.K11",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Sébastien Donzel",
+                          "title": "Präsentation & Pitch",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Sébastien Donzel",
+                          "title": "Präsentation & Pitch",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  },
+                  "saturday": {
+                    "date": "2021-11-13",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "5.K03",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Sébastien Donzel",
+                          "title": "Präsentation & Pitch",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Sébastien Donzel",
+                          "title": "Präsentation & Pitch",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "5.K11",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Christian Gaiser",
+                          "title": "Konzeption",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christian Gaiser",
+                          "title": "Konzeption",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Dezember",
+              "weekends": [
+                {
+                  "friday": {
+                    "date": "2021-12-03",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "5.K03",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christine Gertsch",
+                          "title": "TypoTech",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "5.K10",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Christine Gertsch",
+                          "title": "TypoTech",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  },
+                  "saturday": {
+                    "date": "2021-12-04",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "5.K03",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Dominique Hufschmid",
+                          "title": "UI Design bei Radio Energy",
+                          "guest": true
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "5.K10",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Josef Renner",
+                          "title": "TypoTech",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Dominique Hufschmid",
+                          "title": "UI Design bei Radio Enrgy",
+                          "guest": true
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Januar",
+              "weekends": [
+                {
+                  "friday": {
+                    "date": "2022-01-21",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "3.K13",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Sébastien Donzel",
+                          "title": "Projekt-Management",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Sébastien Donzel",
+                          "title": "Projekt-Management",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "5.K03",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Josef Renner",
+                          "title": "TypoTech",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christine Gertsch",
+                          "title": "TypoTech",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  },
+                  "saturday": {
+                    "date": "2022-01-22",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "3.K13",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Josef Renner",
+                          "title": "TypoTech",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christine Gertsch",
+                          "title": "TypoTech",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "5.K03",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Sébastien Donzel",
+                          "title": "Projekt-Management",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Sébastien Donzel",
+                          "title": "Projekt-Management",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Februar",
+              "weekends": [
+                {
+                  "friday": {
+                    "date": "2022-02-25",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "5.K03",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": null,
+                          "title": "Präsentationen",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": null,
+                          "title": "Präsentationen",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "Y.000",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Kersten Bepler",
+                          "title": "Testing and Continuous Learning",
+                          "guest": true
+                        },
+                        "afternoon": {
+                          "teacher": "Florian Wille",
+                          "title": "Testing and Continuous Learning",
+                          "guest": true
+                        }
+                      }
+                    ]
+                  },
+                  "saturday": {
+                    "date": "2022-02-26",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "X.000",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Kersten Bepler",
+                          "title": "Testing and Continuous Learning",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Florian Wille",
+                          "title": "Testing and Continuous Learning",
+                          "guest": true
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "5.K03",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": null,
+                          "title": "Präsentationen",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": null,
+                          "title": "Präsentationen",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2022,
+      "double": true,
+      "semesters": {
+        "spring": {
+          "months": [ 
+            {
+              "name": "März",
+              "weekends": [
+                {
+                  "friday": {
+                    "date": "2022-03-25",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "5.K01",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Josef Renner",
+                          "title": "Coding",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Josef Renner",
+                          "title": "Coding",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "5.K03",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  },
+                  "saturday": {
+                    "date": "2022-03-26",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "5.K03",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "5.K01",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Josef Renner",
+                          "title": "Coding",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Josef Renner",
+                          "title": "Coding",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "name": "April",
+              "weekends": [
+                {
+                  "friday": {
+                    "date": "2022-04-08",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "5.K03",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Vera Käser",
+                          "title": "Coding",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Vera Käser",
+                          "title": "Coding",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "5.K10",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  },
+                  "saturday": {
+                    "date": "2022-04-09",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "4.T33",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": true
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "5.K03",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Vera Käser",
+                          "title": "Coding",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Vera Käser",
+                          "title": "Coding",
+                          "guest": true
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "friday": {
+                    "date": "2022-04-22",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "6.F01",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Christian Gaiser",
+                          "title": "Konzeption",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christian Gaiser",
+                          "title": "Konzeption",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "5.K03",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  },
+                  "saturday": {
+                    "date": "2022-04-23",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "5.K03",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "6.K04",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Christian Gaiser",
+                          "title": "Konzeption",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christian Gaiser",
+                          "title": "Konzeption",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Mai",
+              "weekends": [
+                {
+                  "friday": {
+                    "date": "2022-05-06",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "5.K10",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Vera Käser",
+                          "title": "Coding",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Vera Käser",
+                          "title": "Coding",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "5.K03",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Christine Gertsch",
+                          "title": "TypoTech",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christine Gertsch",
+                          "title": "TypoTech",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  },
+                  "saturday": {
+                    "date": "2022-05-07",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "5.K03",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Christine Gertsch",
+                          "title": "TypoTech",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christine Gertsch",
+                          "title": "TypoTech",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "5.K10",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Vera Käser",
+                          "title": "Coding",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Vera Käser",
+                          "title": "Coding",
+                          "guest": true
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "friday": {
+                    "date": "2022-05-20",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "3.E03",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Sébastien Donzel",
+                          "title": "Präsentation & Pitch",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Sébastien Donzel",
+                          "title": "Präsentation & Pitch",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "5.K01",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  },
+                  "saturday": {
+                    "date": "2022-05-21",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "5.K01",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "4.T33",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Sébastien Donzel",
+                          "title": "Präsentation & Pitch",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Sébastien Donzel",
+                          "title": "Präsentation & Pitch",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Juni",
+              "weekends": [
+                {
+                  "friday": {
+                    "date": "2022-06-03",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "5.K01",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Josef Renner",
+                          "title": "Coding",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Josef Renner",
+                          "title": "Coding",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "5.K03",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Christian Gaiser",
+                          "title": "Konzeption",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christian Gaiser",
+                          "title": "Konzeption",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  },
+                  "saturday": {
+                    "date": "2022-06-04",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "5.K03",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Christian Gaiser",
+                          "title": "Konzeption",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christian Gaiser",
+                          "title": "Konzeption",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "5.K01",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Josef Renner",
+                          "title": "Coding",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Josef Renner",
+                          "title": "Coding",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "friday": {
+                    "date": "2022-06-17",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "5.K01",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Josef Renner",
+                          "title": "Creative Coding",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Josef Renner",
+                          "title": "Creative Coding",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "5.K03",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Christine Gertsch",
+                          "title": "Creative Coding",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christine Gertsch",
+                          "title": "Creative Coding",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  },
+                  "saturday": {
+                    "date": "2022-06-18",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "5.K03",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Christine Gertsch",
+                          "title": "Creative Coding",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christine Gertsch",
+                          "title": "Creative Coding",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "5.K01",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Josef Renner",
+                          "title": "Creative Coding",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Josef Renner",
+                          "title": "Creative Coding",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "fall": {
+          "months": [ 
+            {
+              "name": "September",
+              "weekends": [
+                {
+                  "friday": {
+                    "date": "2022-09-02",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Josef Renner",
+                          "title": "Coding",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Josef Renner",
+                          "title": "Coding",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  },
+                  "saturday": {
+                    "date": "2022-09-03",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Josef Renner",
+                          "title": "",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Josef Renner",
+                          "title": "",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "friday": {
+                    "date": "2022-09-16",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "",
+                          "title": "",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "",
+                          "title": "",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  },
+                  "saturday": {
+                    "date": "2022-09-17",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "",
+                          "title": "",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christine Gertsch",
+                          "title": "TypoTech",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "friday": {
+                    "date": "2022-09-30",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Christian Gaiser",
+                          "title": "Konzeption",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christian Gaiser",
+                          "title": "Konzeption",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  },
+                  "saturday": {
+                    "date": "2022-10-01",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Christian Gaiser",
+                          "title": "Konzeption",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christian Gaiser",
+                          "title": "Konzeption",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Oktober",
+              "weekends": [
+              {
+                  "friday": {
+                    "date": "2022-10-14",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Christian Gaiser",
+                          "title": "Konzeption",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christian Gaiser",
+                          "title": "Konzeption",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Sébastien Donzel",
+                          "title": "Projekt Management",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Sébastien Donzel",
+                          "title": "Projekt Management",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  },
+                  "saturday": {
+                    "date": "2022-10-15",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Sébastien Donzel",
+                          "title": "Projekt Management",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Sébastien Donzel",
+                          "title": "Projekt Management",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Christian Gaiser",
+                          "title": "Konzeption",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christian Gaiser",
+                          "title": "Konzeption",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "friday": {
+                    "date": "2022-10-28",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Josef Renner",
+                          "title": "Coding",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Josef Renner",
+                          "title": "Coding",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Christine Gertsch",
+                          "title": "TypoTech",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christine Gertsch",
+                          "title": "TypoTech",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  },
+                  "saturday": {
+                    "date": "2022-10-29",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Josef Renner",
+                          "title": "Coding",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Josef Renner",
+                          "title": "Coding",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "name": "November",
+              "weekends": [
+                {
+                  "friday": {
+                    "date": "2022-11-18",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Christine Gertsch",
+                          "title": "TypoTech",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christine Gertsch",
+                          "title": "TypoTech",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  },
+                  "saturday": {
+                    "date": "2022-11-19",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Florian Schulz",
+                          "title": "UI Design",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Christine Gertsch",
+                          "title": "TypoTech",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Christine Gertsch",
+                          "title": "TypoTech",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Dezember",
+              "weekends": [
+                {
+                  "friday": {
+                    "date": "2022-12-09",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Josef Renner",
+                          "title": "Präsentationen",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Josef Renner",
+                          "title": "Präsentationen",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Dan Nessler",
+                          "title": "Story Frameworks",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Dan Nessler",
+                          "title": "Story Frameworks",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  },
+                  "saturday": {
+                    "date": "2022-12-10",
+                    "classes": [
+                      {
+                        "name": "red",
+                        "room": "",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Dan Nessler",
+                          "title": "Story Frameworks",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Dan Nessler",
+                          "title": "Story Frameworks",
+                          "guest": false
+                        }
+                      },
+                      {
+                        "name": "blue",
+                        "room": "",
+                        "postponed": false,
+                        "morning": {
+                          "teacher": "Josef Renner",
+                          "title": "Präsentationen",
+                          "guest": false
+                        },
+                        "afternoon": {
+                          "teacher": "Josef Renner",
+                          "title": "Präsentationen",
+                          "guest": false
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
