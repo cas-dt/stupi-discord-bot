@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Discord bot that processes json data",
   "main": "bot.js",
+  "engines": {
+    "node": "17.8.0"
+  },
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon -e js index.js",
