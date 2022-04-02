@@ -6,6 +6,8 @@
  * [-] api call curriculum
  * [-] test real data
  * [-] change timing
+ * [-] add bot to dokku
+ * [-] check for env var conflicts
  * [-] add bot to CAS DT Discord server
  * [-] pink/lila channels
  *
