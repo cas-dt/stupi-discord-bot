@@ -1,8 +1,8 @@
 {
-  "name": "stupi-discord-bot",
+  "name": "stupibot",
   "version": "1.0.0",
   "description": "Discord bot that processes json data",
-  "main": "bot.js",
+  "main": "index.js",
   "engines": {
     "node": "17.8.0"
   },
