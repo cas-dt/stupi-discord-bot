@@ -2,14 +2,14 @@
  * TODO
  * ====
  * [x] set up nodemon
- * [-] install latest node on minipanda
- * [-] api call curriculum
- * [-] test real data
- * [-] change timing
- * [-] add bot to dokku
- * [-] check for env var conflicts
- * [-] add bot to CAS DT Discord server
- * [-] pink/lila channels
+ * [x] install latest node on minipanda
+ * [x] api call curriculum
+ * [x] test real data
+ * [x] change timing
+ * [x] add bot to CAS DT Discord server
+ * [x] check for env var conflicts: botToken, guildID, clientID
+ * [x] add bot to dokku
+ * [x] pink/lila channels
  *
   * */
 const cron = require('node-cron')
@@ -20,43 +20,25 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
 
-const testData = [
-  {
-    date: "2022-04-01",
-    classes: [
-      {
-        name: "apples",
-        title: "foo hello"
-      },
-      {
-        name: "oranges",
-        title: "onkel jodok lässt grüssen"
-      }
-    ]
-  },
-  {
-    date: "2022-04-02",
-    classes: [
-      {
-        name: "apples",
-        title: "yo yo hello"
-      },
-      {
-        name: "oranges",
-        title: "onkel buzi lässt grüssen"
-      }
-    ]
-  }
-]
+// cron.schedule('* * * * *', () => {
+cron.schedule('0 8 * * FRI,SAT', () => {
+  // https://crontab.guru
+  // 0 8 * * FRI,SAT
+  // At 08:00 on Friday and Saturday.
+  // is it a school day?
 
-
-cron.schedule('* * * * *', () => {
+  /* sollten die env-variablen aus dieser funktion raus? */
   dotenv.config()
+  const env = process.env.ENV
   const botToken = process.env.botToken
   const clientId = process.env.clientID
   const guildId = process.env.guildID
-  const channelId1 = '958843538450313276'
-  const channelId2 = '959531185892122634'
+  const casdtGuildId = process.env.casdtGuildID
+  // das muss env werden
+  // const channelId1 = '958843538450313276'
+  // const channelId2 = '959531185892122634'
+  const channelIdLila = process.env.lilaID
+  const channelIdPink = process.env.pinkID
 
   const client = new Client({ intents: ['GUILD_MESSAGES']})
 
@@ -66,27 +48,66 @@ cron.schedule('* * * * *', () => {
   client.once('ready', async () => {
     console.log('🤖 Stubibot ready')
 
-    const channel1 = await client.channels.fetch(channelId1);
-    const channel2 = await client.channels.fetch(channelId2);
+    // parse JSON string to JSON object
+    const request = async () => {
+      const response = await fetch('https://minipanda.ch/api')
+      const weekends = await response.json()
+      /*
+      weekends.forEach(weekend => {
+        for (let day in weekend) {
+          const today = weekend[day]
+          const niceDate = new Date(today.date).toLocaleDateString('de-CH')
+          // console.log(`${day === 'friday' ? 'Freitag' : 'Samstag'}, ${niceDate}`)
+          for (let cla of today.classes) {
+            const name = cla.name
+            const room = cla.room.length ? cla.room.length : 'Y.000'
+            const title = cla.morning.title
+            const teacher = cla.morning.teacher
+          }
+        }
+      })
+      */
+      return weekends
+    }
+
+    const curriculum = await request()
+
+    const channelPink = await client.channels.fetch(channelIdPink);
+    const channelLila = await client.channels.fetch(channelIdLila);
 
     const now = Date.now()
     let today = new Date(now)
     today = today.toISOString()
     today = today.split('T')[0] // cut off timestamp
+    // fake it
+    // today = '2022-04-09'
 
-    const todayClasses = testData.find(day => day.date === today)
-    console.log(`today: ${today}`)
-    console.log(`todayClasses.date: ${todayClasses.date}`)
-    if (todayClasses) {
-      const classes = todayClasses.classes
-      const message1 = `Klasse: ${classes[0].name}\r\nTitel: ${classes[0].title}`
-      const message2 = `Klasse: ${classes[1].name}\r\nTitel: ${classes[1].title}`
-      channel1.send(message1)
-      channel2.send(message2)
+    const classWeekend = curriculum.find(weekend => weekend.friday.date === today || weekend.saturday.date === today)
+
+    if (classWeekend) {
+      let classDay // fill receive day’s info, but is it friday or saturday?
+      for (let day in classWeekend) { // either friday or saturday
+        if (classWeekend[day].date == today) {
+          classDay = classWeekend[day]
+        }
+      }
+      classDay.classes.forEach(cla => {
+        let channel = cla.name === 'pink' ? channelPink : channelLila
+        const openingEmojis = ['👾','😎','🥳','👻','🥐','🤖','😻','😹','🐼','🐶','🐯','🐞','🦁','🐭','🪲','🦋','🦉','🐡','🐠','🦑','🐙','🐢','🐳','🐿','🦔','🌴','🍄','🌳','🍎','🍏','🍊','🍋','🍉','🍇','🥨','🍔','🌭','🚀','🚂','⛵️','🚒'];
+        const opEmo = openingEmojis[Math.trunc(Math.random() * openingEmojis.length)]
+        const closingEmojis = ['🌈','☀️','🎈','🌻','✨','🍹','🌸','⭐️','💐']
+        const clEmo = closingEmojis[Math.trunc(Math.random() * closingEmojis.length)]
+        const title = `**${cla.morning.title}**`
+        const teacher = cla.morning.teacher
+        const room = `Zimmer \`${cla.room}\``
+        channel.send(`${opEmo} Guten Morgen ${opEmo}\r\nDas Programm heute:\r\n${title} mit ${teacher}\r\nin ${room} ${clEmo}` )
+
+        console.log(`Klasse «${cla.name}» – Info sent to Channel`)
+      })
+    } else {
+      console.log('no class this weekend')
     }
-
-
     console.log('🤖 Stubibot done')
   })
 
-})
+}) // end cron job
