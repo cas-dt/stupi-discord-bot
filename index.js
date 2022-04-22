@@ -20,8 +20,33 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
 
+<<<<<<< Updated upstream
+=======
+dotenv.config()
+const env = process.env.ENV
+const botToken = process.env.botToken
+const clientId = process.env.clientID
+const guildId = process.env.guildID
+const casdtGuildId = process.env.casdtGuildID
+// das muss env werden
+const channelIdLila = process.env.lilaID
+const channelIdPink = process.env.pinkID
+
+/*
+cron.schedule('j 8 * * FRI,SAT', () => {
+}
+*/
+// test für type brand, bzw. bottest casdt
+const typeBrandClient = new Client({ intents: ['GUILD_MESSAGES']})
+typeBrandClient.login(botToken)
+typeBrandClient.once('ready', async () => {
+  const zeitRaumChan = await typeBrandClient.channels.fetch(process.env.zeitRaum);
+  zeitRaumChan.send('Stupibot Test Nr. 2 🤖')
+})
+
+>>>>>>> Stashed changes
 // cron.schedule('* * * * *', () => {
-cron.schedule('0 8 * * FRI,SAT', () => {
+cron.schedule('0 6 * * FRI,SAT', () => { // 6 Uhr ist wohl 8 Uhr Sommerzeit hier?
   // https://crontab.guru
   // 0 8 * * FRI,SAT
   // At 08:00 on Friday and Saturday.
