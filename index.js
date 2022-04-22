@@ -20,8 +20,6 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
 
-<<<<<<< Updated upstream
-=======
 dotenv.config()
 const env = process.env.ENV
 const botToken = process.env.botToken
@@ -35,16 +33,15 @@ const channelIdPink = process.env.pinkID
 /*
 cron.schedule('j 8 * * FRI,SAT', () => {
 }
-*/
-// test für type brand, bzw. bottest casdt
 const typeBrandClient = new Client({ intents: ['GUILD_MESSAGES']})
 typeBrandClient.login(botToken)
 typeBrandClient.once('ready', async () => {
   const zeitRaumChan = await typeBrandClient.channels.fetch(process.env.zeitRaum);
   zeitRaumChan.send('Stupibot Test Nr. 2 🤖')
 })
+*/
+// test für type brand, bzw. bottest casdt
 
->>>>>>> Stashed changes
 // cron.schedule('* * * * *', () => {
 cron.schedule('0 6 * * FRI,SAT', () => { // 6 Uhr ist wohl 8 Uhr Sommerzeit hier?
   // https://crontab.guru
@@ -77,21 +74,6 @@ cron.schedule('0 6 * * FRI,SAT', () => { // 6 Uhr ist wohl 8 Uhr Sommerzeit hier
     const request = async () => {
       const response = await fetch('https://minipanda.ch/api')
       const weekends = await response.json()
-      /*
-      weekends.forEach(weekend => {
-        for (let day in weekend) {
-          const today = weekend[day]
-          const niceDate = new Date(today.date).toLocaleDateString('de-CH')
-          // console.log(`${day === 'friday' ? 'Freitag' : 'Samstag'}, ${niceDate}`)
-          for (let cla of today.classes) {
-            const name = cla.name
-            const room = cla.room.length ? cla.room.length : 'Y.000'
-            const title = cla.morning.title
-            const teacher = cla.morning.teacher
-          }
-        }
-      })
-      */
       return weekends
     }
 
