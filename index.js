@@ -11,6 +11,11 @@
  * [x] add bot to dokku
  * [x] pink/lila channels
  *
+ * Vorsicht, git push dokku main
+ * geht nicht mehr, warum?
+ * workaround: git push origin main, dann auf minipanda:
+ * dokku git:sync stupibot https://github.com/cas-dt/stupi-discord-bot main
+ *
   * */
 const cron = require('node-cron')
 const fetch = require('node-fetch')
@@ -45,22 +50,8 @@ typeBrandClient.once('ready', async () => {
 // cron.schedule('* * * * *', () => {
 cron.schedule('0 6 * * FRI,SAT', () => { // 6 Uhr ist wohl 8 Uhr Sommerzeit hier?
   // https://crontab.guru
-  // 0 8 * * FRI,SAT
   // At 08:00 on Friday and Saturday.
   // is it a school day?
-
-  /* sollten die env-variablen aus dieser funktion raus? */
-  dotenv.config()
-  const env = process.env.ENV
-  const botToken = process.env.botToken
-  const clientId = process.env.clientID
-  const guildId = process.env.guildID
-  const casdtGuildId = process.env.casdtGuildID
-  // das muss env werden
-  // const channelId1 = '958843538450313276'
-  // const channelId2 = '959531185892122634'
-  const channelIdLila = process.env.lilaID
-  const channelIdPink = process.env.pinkID
 
   const client = new Client({ intents: ['GUILD_MESSAGES']})
 
