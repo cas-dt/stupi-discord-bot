@@ -47,6 +47,22 @@ typeBrandClient.once('ready', async () => {
 */
 // test für type brand, bzw. bottest casdt
 
+/*test*/
+cron.schedule('48,49,50,51 21 * * THU', () => {
+  const client = new Client({ intents: ['GUILD_MESSAGES']})
+  client.destroy() // logout
+  client.login(botToken)
+  client.once('ready', async () => {
+    console.log('🤖 Stubibot ready for testing.')
+    const testChannel = await client.channels.fetch(process.env.testGeneral)
+    const now = Date.now()
+    let today = new Date(now)
+    today = today.toISOString()
+    today = today.split('T')[0] // cut off timestamp
+    testChannel.send(`Sali, es ist ${today}` )
+  })
+})
+
 // cron.schedule('* * * * *', () => {
 cron.schedule('0 6 * * FRI,SAT', () => { // 6 Uhr ist wohl 8 Uhr Sommerzeit hier?
   // https://crontab.guru
