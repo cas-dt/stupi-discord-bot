@@ -48,7 +48,7 @@ typeBrandClient.once('ready', async () => {
 // test für type brand, bzw. bottest casdt
 
 /*test*/
-cron.schedule('48,49,50,51 21 * * THU', () => {
+cron.schedule('0 6 * * *', () => {
   const client = new Client({ intents: ['GUILD_MESSAGES']})
   client.destroy() // logout
   client.login(botToken)
@@ -58,8 +58,8 @@ cron.schedule('48,49,50,51 21 * * THU', () => {
     const now = Date.now()
     let today = new Date(now)
     today = today.toISOString()
-    today = today.split('T')[0] // cut off timestamp
-    testChannel.send(`Sali, es ist ${today}` )
+    today = today.split('T')[1] // cut off date
+    testChannel.send(`Ist es 8 Uhr oder was?` )
   })
 })
 
