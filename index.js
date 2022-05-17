@@ -16,6 +16,8 @@
  * workaround: git push origin main, dann auf minipanda:
  * dokku git:sync stupibot https://github.com/cas-dt/stupi-discord-bot main
  *
+ * add bot to server:
+ * https://discordjs.guide/preparations/adding-your-bot-to-servers.html#bot-invite-links
   * */
 const cron = require('node-cron')
 const fetch = require('node-fetch')
@@ -47,14 +49,14 @@ typeBrandClient.once('ready', async () => {
 */
 // test für type brand, bzw. bottest casdt
 
-/*test*/
-cron.schedule('0 6 * * *', () => {
+/* Geburi Christine*/
+cron.schedule('0 6 5 5 *', () => {
   const client = new Client({ intents: ['GUILD_MESSAGES']})
   client.destroy() // logout
   client.login(botToken)
   client.once('ready', async () => {
-    console.log('🤖 Stubibot ready for testing.')
-    const testChannel = await client.channels.fetch(process.env.testGeneral)
+    console.log('🤖 Stubibot ready for congratulating.')
+    const testChannel = await client.channels.fetch(process.env.wbAllgemein)
     const now = Date.now()
     let today = new Date(now)
     today = today.toISOString()
