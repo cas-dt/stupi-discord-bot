@@ -50,18 +50,18 @@ typeBrandClient.once('ready', async () => {
 // test für type brand, bzw. bottest casdt
 
 /* Geburi Christine*/
-cron.schedule('0 6 5 5 *', () => {
+cron.schedule('0 7 18 5 *', () => {
   const client = new Client({ intents: ['GUILD_MESSAGES']})
   client.destroy() // logout
   client.login(botToken)
   client.once('ready', async () => {
-    console.log('🤖 Stubibot ready for congratulating.')
-    const testChannel = await client.channels.fetch(process.env.wbAllgemein)
-    const now = Date.now()
-    let today = new Date(now)
-    today = today.toISOString()
-    today = today.split('T')[1] // cut off date
-    testChannel.send(`Ist es 8 Uhr oder was?` )
+    // console.log('🤖 Stubibot ready for congratulating.')
+    const allgChannel = await client.channels.fetch(process.env.wbAllgemein)
+    const openingEmojis = ['👾','🥳','👻','🥐','🤖','🐯','🐞','🦔','⛵️'];
+    const opEmo = openingEmojis[Math.trunc(Math.random() * openingEmojis.length)]
+    const closingEmojis = ['🌈','☀️','🌻','✨','💐']
+    const clEmo = closingEmojis[Math.trunc(Math.random() * closingEmojis.length)]
+    allgChannel.send(`${opEmo} Alles Gute zum Geburtstag, Christine! ${clEmo}` )
   })
 })
 
