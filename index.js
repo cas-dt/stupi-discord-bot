@@ -57,11 +57,11 @@ cron.schedule('0 7 18 5 *', () => {
   client.once('ready', async () => {
     // console.log('🤖 Stubibot ready for congratulating.')
     const allgChannel = await client.channels.fetch(process.env.wbAllgemein)
-    const openingEmojis = ['👾','🥳','👻','🥐','🤖','🐯','🐞','🦔','⛵️'];
-    const opEmo = openingEmojis[Math.trunc(Math.random() * openingEmojis.length)]
-    const closingEmojis = ['🌈','☀️','🌻','✨','💐']
-    const clEmo = closingEmojis[Math.trunc(Math.random() * closingEmojis.length)]
-    allgChannel.send(`${opEmo} Alles Gute zum Geburtstag, Christine! ${clEmo}` )
+    const intro = ['👾','🥳','👻','🥐','🤖','🐯','🐞','🦔','⛵️'];
+    const introEmo = intro[Math.trunc(Math.random() * intro.length)]
+    const outro = ['🌈','☀️','🌻','✨','💐']
+    const outroEmo = outro[Math.trunc(Math.random() * outro.length)]
+    allgChannel.send(`${introEmo} Alles Gute zum Geburtstag, Christine! ${outroEmo}` )
   })
 })
 
