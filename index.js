@@ -116,7 +116,11 @@ cron.schedule('0 6 * * FRI,SAT', () => { // 6 Uhr ist wohl 8 Uhr Sommerzeit hier
         const title = `**${cla.morning.title}**`
         const teacher = cla.morning.teacher
         const room = `Zimmer \`${cla.room}\``
-        channel.send(`${opEmo} Guten Morgen ${opEmo}\r\nDas Programm heute:\r\n${title} mit ${teacher}\r\nin ${room} ${clEmo}` )
+        if (cla.postponed) {
+          channel.send(`🚧 Guten Morgen 🚧\r\n${title} mit ${teacher}\r\nfällt aus. Weitere Infos folgen. 🛠` )
+        } else {
+          channel.send(`${opEmo} Guten Morgen ${opEmo}\r\nDas Programm heute:\r\n${title} mit ${teacher}\r\nin ${room} ${clEmo}` )
+        }
 
         console.log(`Klasse «${cla.name}» – Info sent to Channel`)
       })
