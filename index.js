@@ -49,7 +49,8 @@ typeBrandClient.once('ready', async () => {
 */
 // test für type brand, bzw. bottest casdt
 
-/* Geburi Christine*/
+
+/* Geburi Christine */
 cron.schedule('0 7 18 5 *', () => {
   const client = new Client({ intents: ['GUILD_MESSAGES']})
   client.destroy() // logout
@@ -62,6 +63,22 @@ cron.schedule('0 7 18 5 *', () => {
     const outro = ['🌈','☀️','🌻','✨','💐']
     const outroEmo = outro[Math.trunc(Math.random() * outro.length)]
     allgChannel.send(`${introEmo} Alles Gute zum Geburtstag, Christine! ${outroEmo}` )
+  })
+})
+
+/* Geburi Roland */
+cron.schedule('0 7 18 6 *', () => {
+  const client = new Client({ intents: ['GUILD_MESSAGES']})
+  client.destroy() // logout
+  client.login(botToken)
+  client.once('ready', async () => {
+    // console.log('🤖 Stubibot ready for congratulating.')
+    const allgChannel = await client.channels.fetch(process.env.wbAllgemein)
+    const intro = ['👾','🤖','🎈','🐞','🦔'];
+    const introEmo = intro[Math.trunc(Math.random() * intro.length)]
+    const outro = ['🌈','☀️','🌻']
+    const outroEmo = outro[Math.trunc(Math.random() * outro.length)]
+    allgChannel.send(`${introEmo} Bzzzt! Ein Robotergruss zum Geburtstag, Roland! ${outroEmo}` )
   })
 })
 
