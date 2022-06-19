@@ -98,7 +98,7 @@ cron.schedule('0 6 * * FRI,SAT', () => { // 6 Uhr ist wohl 8 Uhr Sommerzeit hier
 
     // parse JSON string to JSON object
     const request = async () => {
-      const response = await fetch('https://minipanda.ch/api')
+      const response = await fetch('https://minipanda.ch/api/2022')
       const weekends = await response.json()
       return weekends
     }
