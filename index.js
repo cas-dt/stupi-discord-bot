@@ -59,7 +59,7 @@ function getOpeningEmojis() {
   return opEmo
 }
         
-get closingEmojis() {
+function closingEmojis() {
   const closingEmojis = ['🌈','☀️','🎈','🌻','✨','🍹','🌸','⭐️','💐']
   const clEmo = closingEmojis[Math.trunc(Math.random() * closingEmojis.length)]
   return clEmo
