@@ -1,24 +1,15 @@
 /*
- * TODO
- * ====
- * [x] set up nodemon
- * [x] install latest node on minipanda
- * [x] api call curriculum
- * [x] test real data
- * [x] change timing
- * [x] add bot to CAS DT Discord server
- * [x] check for env var conflicts: botToken, guildID, clientID
- * [x] add bot to dokku
- * [x] pink/lila channels
  *
  * Vorsicht, git push dokku main
  * geht nicht mehr, warum?
  * workaround: git push origin main, dann auf minipanda:
  * dokku git:sync stupibot https://github.com/cas-dt/stupi-discord-bot main
  *
- * add bot to server:
+ * pro memoria: add bot to server
  * https://discordjs.guide/preparations/adding-your-bot-to-servers.html#bot-invite-links
-  * */
+  *
+  */
+
 const cron = require('node-cron')
 const fetch = require('node-fetch')
 const dotenv = require('dotenv')
@@ -28,14 +19,17 @@ const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
 
 dotenv.config()
+
+// env vars
 const env = process.env.ENV
 const botToken = process.env.botToken
 const clientId = process.env.clientID
 const guildId = process.env.guildID
 const casdtGuildId = process.env.casdtGuildID
-// das muss env werden
 const channelIdLila = process.env.lilaID
 const channelIdPink = process.env.pinkID
+const c4taServer = process.envc4taGuildID
+const c4taAllgmein = process.env.c4taAllgmein
 
 /*
 cron.schedule('j 8 * * FRI,SAT', () => {
@@ -48,6 +42,29 @@ typeBrandClient.once('ready', async () => {
 })
 */
 // test für type brand, bzw. bottest casdt
+
+function getTodaysDate() {
+  // returns date as string
+  // today = '2022-04-09'
+  const now = Date.now()
+  let today = new Date(now)
+  today = today.toISOString()
+  today = today.split('T')[0] // cut off timestamp
+  return today
+}
+
+function getOpeningEmojis() {
+  const openingEmojis = ['👾','😎','🥳','👻','🥐','🤖','😻','😹','🐼','🐶','🐯','🐞','🦁','🐭','🪲','🦋','🦉','🐡','🐠','🦑','🐙','🐢','🐳','🐿','🦔','🌴','🍄','🌳','🍎','🍏','🍊','🍋','🍉','🍇','🥨','🍔','🌭','🚀','🚂','⛵️','🚒']
+  const opEmo = openingEmojis[Math.trunc(Math.random() * openingEmojis.length)]
+  return opEmo
+}
+        
+get closingEmojis() {
+  const closingEmojis = ['🌈','☀️','🎈','🌻','✨','🍹','🌸','⭐️','💐']
+  const clEmo = closingEmojis[Math.trunc(Math.random() * closingEmojis.length)]
+  return clEmo
+}
+
 
 
 /* Geburi Christine */
@@ -71,8 +88,7 @@ cron.schedule('0 7 18 6 *', () => {
   const client = new Client({ intents: ['GUILD_MESSAGES']})
   client.destroy() // logout
   client.login(botToken)
-  client.once('ready', async () => {
-    // console.log('🤖 Stubibot ready for congratulating.')
+  client.once('ready', async () => { // console.log('🤖 Stubibot ready for congratulating.')
     const allgChannel = await client.channels.fetch(process.env.wbAllgemein)
     const intro = ['👾','🤖','🎈','🐞','🦔'];
     const introEmo = intro[Math.trunc(Math.random() * intro.length)]
@@ -82,7 +98,42 @@ cron.schedule('0 7 18 6 *', () => {
   })
 })
 
-// cron.schedule('* * * * *', () => {
+// Stundenplan c4ta
+cron.schedule('0 6 * * MON', () => {
+  // At 08:00 on Monday
+
+  const client = new Client({ intents: ['GUILD_MESSAGES']})
+
+  client.destroy() // logout
+  client.login(botToken)
+  client.once('ready', async () => {
+    console.log(' Stupibot redy for c4ta')
+
+    // parse JSON string to JSON object
+    const request = async () => {
+      const response = await fetch('https://c4ta-curriculum.herokuapp.com/api/')
+      const schooldays = await response.json()
+      return schooldays
+    }
+
+    const c4ta_curriculum = await request()
+    const c4taAllgemein = await client.channels.fetch(c4taAllgmein);
+
+    const today = getTodaysDate()
+    const classMonday = casdt_curriculum.find(schoolday => schoolday.date === today)
+
+    if (classMonday) { // today is a schoolday!
+      const opEmo = openingEmojis()
+      const clEmo = closingEmojis()
+      const teacher = schoolday.teacher.name
+      const title = schoolday.title
+      const room = schoolday.room
+      c4taAllgemein.send(`${opEmo} Guten Morgen ${opEmo}\r\nDas Programm heute:\r\n${title} mit ${teacher}\r\nin ${room} ${clEmo}`) 
+    }
+  })
+})
+
+// Stundenplan CAS DT
 cron.schedule('0 6 * * FRI,SAT', () => { // 6 Uhr ist wohl 8 Uhr Sommerzeit hier?
   // https://crontab.guru
   // At 08:00 on Friday and Saturday.
@@ -94,7 +145,7 @@ cron.schedule('0 6 * * FRI,SAT', () => { // 6 Uhr ist wohl 8 Uhr Sommerzeit hier
   client.login(botToken)
 
   client.once('ready', async () => {
-    console.log('🤖 Stubibot ready')
+    console.log('🤖 Stubibot ready for cas dt')
 
     // parse JSON string to JSON object
     const request = async () => {
@@ -103,19 +154,14 @@ cron.schedule('0 6 * * FRI,SAT', () => { // 6 Uhr ist wohl 8 Uhr Sommerzeit hier
       return weekends
     }
 
-    const curriculum = await request()
+    const casdt_curriculum = await request()
 
     const channelPink = await client.channels.fetch(channelIdPink);
     const channelLila = await client.channels.fetch(channelIdLila);
 
-    const now = Date.now()
-    let today = new Date(now)
-    today = today.toISOString()
-    today = today.split('T')[0] // cut off timestamp
-    // fake it
-    // today = '2022-04-09'
+    const today = getTodaysDate()
 
-    const classWeekend = curriculum.find(weekend => weekend.friday.date === today || weekend.saturday.date === today)
+    const classWeekend = casdt_curriculum.find(weekend => weekend.friday.date === today || weekend.saturday.date === today)
 
     if (classWeekend) {
       let classDay // fill receive day’s info, but is it friday or saturday?
@@ -126,20 +172,18 @@ cron.schedule('0 6 * * FRI,SAT', () => { // 6 Uhr ist wohl 8 Uhr Sommerzeit hier
       }
       classDay.classes.forEach(cla => {
         let channel = cla.name === 'pink' ? channelPink : channelLila
-        const openingEmojis = ['👾','😎','🥳','👻','🥐','🤖','😻','😹','🐼','🐶','🐯','🐞','🦁','🐭','🪲','🦋','🦉','🐡','🐠','🦑','🐙','🐢','🐳','🐿','🦔','🌴','🍄','🌳','🍎','🍏','🍊','🍋','🍉','🍇','🥨','🍔','🌭','🚀','🚂','⛵️','🚒'];
-        const opEmo = openingEmojis[Math.trunc(Math.random() * openingEmojis.length)]
-        const closingEmojis = ['🌈','☀️','🎈','🌻','✨','🍹','🌸','⭐️','💐']
-        const clEmo = closingEmojis[Math.trunc(Math.random() * closingEmojis.length)]
+        const opEmo = openingEmojis()
+        const clEmo = closingEmojis()
         const title = `**${cla.morning.title}**`
         const teacher = cla.morning.teacher
         const room = `Zimmer \`${cla.room}\``
         if (cla.postponed) {
           channel.send(`🚧 Guten Morgen 🚧\r\n${title} mit ${teacher}\r\nfällt aus. Weitere Infos folgen. 🛠` )
         } else {
-          channel.send(`${opEmo} Guten Morgen ${opEmo}\r\nDas Programm heute:\r\n${title} mit ${teacher}\r\nin ${room} ${clEmo}` )
+          channel.send(`${opEmo} Guten Morgen ${opEmo}\r\nDas Programm heute:\r\n${title} mit ${teacher}\r\nin ${room} ${clEmo}`)
         }
 
-        console.log(`Klasse «${cla.name}» – Info sent to Channel`)
+        // console.log(`Klasse «${cla.name}» – Info sent to Channel`)
       })
     } else {
       console.log('no class this weekend')
