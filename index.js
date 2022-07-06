@@ -28,8 +28,8 @@ const guildId = process.env.guildID
 const casdtGuildId = process.env.casdtGuildID
 const channelIdLila = process.env.lilaID
 const channelIdPink = process.env.pinkID
-const c4taServer = process.envc4taGuildID
-const c4taAllgmein = process.env.c4taAllgmein
+const c4taServer = process.env.c4taGuildID
+const c4taAllgemein = process.env.c4taAllgemein
 
 /*
 cron.schedule('j 8 * * FRI,SAT', () => {
@@ -53,7 +53,7 @@ function getTodaysDate() {
   return today
 }
 
-function getOpeningEmojis() {
+function openingEmojis() {
   const openingEmojis = ['👾','😎','🥳','👻','🥐','🤖','😻','😹','🐼','🐶','🐯','🐞','🦁','🐭','🪲','🦋','🦉','🐡','🐠','🦑','🐙','🐢','🐳','🐿','🦔','🌴','🍄','🌳','🍎','🍏','🍊','🍋','🍉','🍇','🥨','🍔','🌭','🚀','🚂','⛵️','🚒']
   const opEmo = openingEmojis[Math.trunc(Math.random() * openingEmojis.length)]
   return opEmo
@@ -64,8 +64,6 @@ function closingEmojis() {
   const clEmo = closingEmojis[Math.trunc(Math.random() * closingEmojis.length)]
   return clEmo
 }
-
-
 
 /* Geburi Christine */
 cron.schedule('0 7 18 5 *', () => {
@@ -88,7 +86,7 @@ cron.schedule('0 7 18 6 *', () => {
   const client = new Client({ intents: ['GUILD_MESSAGES']})
   client.destroy() // logout
   client.login(botToken)
-  client.once('ready', async () => { // console.log('🤖 Stubibot ready for congratulating.')
+  client.once('ready', async () => {
     const allgChannel = await client.channels.fetch(process.env.wbAllgemein)
     const intro = ['👾','🤖','🎈','🐞','🦔'];
     const introEmo = intro[Math.trunc(Math.random() * intro.length)]
@@ -107,7 +105,7 @@ cron.schedule('0 6 * * MON', () => {
   client.destroy() // logout
   client.login(botToken)
   client.once('ready', async () => {
-    console.log(' Stupibot redy for c4ta')
+    console.log(' Stupibot ready for c4ta')
 
     // parse JSON string to JSON object
     const request = async () => {
@@ -117,18 +115,20 @@ cron.schedule('0 6 * * MON', () => {
     }
 
     const c4ta_curriculum = await request()
-    const c4taAllgemein = await client.channels.fetch(c4taAllgmein);
+    const c4ta_channel = await client.channels.fetch(c4taAllgemein)
 
     const today = getTodaysDate()
-    const classMonday = casdt_curriculum.find(schoolday => schoolday.date === today)
+    console.log(today)
+    const classMonday = c4ta_curriculum.find(schoolday => schoolday.date === today)
+    console.log(classMonday)
 
     if (classMonday) { // today is a schoolday!
       const opEmo = openingEmojis()
       const clEmo = closingEmojis()
-      const teacher = schoolday.teacher.name
-      const title = schoolday.title
-      const room = schoolday.room
-      c4taAllgemein.send(`${opEmo} Guten Morgen ${opEmo}\r\nDas Programm heute:\r\n${title} mit ${teacher}\r\nin ${room} ${clEmo}`) 
+      const teacher = classMonday.teacher.name
+      const title = classMonday.title
+      const room = classMonday.room
+      c4ta_channel.send(`${opEmo} Guten Morgen ${opEmo}\r\nDas Programm heute:\r\n${title} mit ${teacher}\r\nin ${room} ${clEmo}`) 
     }
   })
 })
